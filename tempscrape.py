@@ -33,3 +33,5 @@ tmw_low  = tmw_night.find(class_="temp").get_text()
 print("Currently it is",curr_cond,"@",curr_temp)
 print("Today's",today_high,today_low)
 print("Tomorrow's",tmw_high,tmw_low)
+
+
