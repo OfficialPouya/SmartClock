@@ -2,12 +2,12 @@ import requests
 from bs4 import BeautifulSoup
 
 #times of places I want to read & page requests#
-chi_page = requests.get("https://24timezones.com/usa_time/il_cook/chicago.php")
+page = requests.get("https://24timezones.com/usa_time/il_cook/chicago.php")
 #iri_page = requests.get("https://24timezones.com/world_directory/time_in_tehran.php")
 #cst_page = requests.get("https://24timezones.com/world_directory/time_in_shanghai.php")
 
 #data parse#
-chi = BeautifulSoup(chi_page.content, 'html.parser')
+chi = BeautifulSoup(page.content, 'html.parser')
 #iri = BeautifulSoup(iri_page.content, 'html.parser')
 #cst = BeautifulSoup(cst_page.content, 'html.parser')
 
