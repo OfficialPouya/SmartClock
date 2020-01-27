@@ -138,7 +138,7 @@ while(1==1):
 		time_page=time_zone_time(time_zone)
 		clock, o_seconds, ampm, day, month, year, day_num, postfix=time_parse(time_page)
 		time_print(day,day_num,postfix,month,clock,ampm)
-		time.sleep(55)
+		time.sleep(20)
 
 			
 
