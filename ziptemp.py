@@ -134,11 +134,17 @@ local_seconds = local_clock[2]
 local_seconds=int(local_seconds)
 
 print(day,"the",day_string,"of",month)
+x=0
 while(1==1):
 		time_page=time_zone_time(time_zone)
 		clock, o_seconds, ampm, day, month, year, day_num, postfix=time_parse(time_page)
 		time_print(day,day_num,postfix,month,clock,ampm)
 		time.sleep(20)
+		x=x+1
+		if(x==40):
+			temp_F, description = weather_get(city_name)
+			weather_print(temp_F,description)
+			x=0
 
 			
 
