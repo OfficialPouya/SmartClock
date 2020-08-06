@@ -130,8 +130,8 @@ local_seconds = time.time()
 local_time = time.ctime(local_seconds)
 local_time_parsed=local_time.split(' ')
 local_clock = local_time_parsed[3].split(':')
-local_seconds = local_clock[2]
-local_seconds=int(local_seconds)
+#local_seconds = local_clock[2]
+#local_seconds=int(local_seconds)
 
 print(day,"the",day_string,"of",month)
 x=0
@@ -142,8 +142,11 @@ while(1==1):
 		time.sleep(20)
 		x=x+1
 		if(x==40):
-			temp_F, description = weather_get(city_name)
-			weather_print(temp_F,description)
+
+			temp_F_new, description_new = weather_get(city_name)
+			if(temp_F==temp_F_new):
+			else:		
+				weather_print(temp_F_new,description_new)
 			x=0
 
 			
