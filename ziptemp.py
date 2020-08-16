@@ -145,9 +145,10 @@ while(1==1):
 
 			temp_F_new, description_new = weather_get(city_name)
 			if(temp_F==temp_F_new):
+				x=0
 			else:		
 				weather_print(temp_F_new,description_new)
-			x=0
+				x=0
 
 			
 
